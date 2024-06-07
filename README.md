@@ -1,2 +1,2 @@
 # hydrogen
-An alternative Debian based Car Thing operating system.
+An alternative Debian based Car Thing UI.
