@@ -1,2 +1,14 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+	import { goto } from '$app/navigation';
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		setTimeout(() => {
+			goto('/home');
+		}, 2500);
+	});
+</script>
+
+<div class="flex h-screen w-screen items-center justify-center">
+	<img src="/logo.png" alt="Hydrogen Logo" class="w-24 animate-spin" />
+</div>
